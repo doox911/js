@@ -1,3 +1,20 @@
+### Falsy values ###
+------------------------
+number `0`
+
+BigInt `0n`
+
+ключевое слово `null`
+
+ключевое слово `undefined`
+
+boolean `false`
+
+number `NaN`
+
+пустая строка `""` (`''` или \`\`)
+
+
 ### Null and Undefined ###
 -------------------------
 
