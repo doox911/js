@@ -27,16 +27,18 @@ number `NaN`
 ### Корректная проверка на типы данных ###
 
 ```javascript
-const toString = {}.toString
+function typeIs(type) {
+  return {}.toString.call(type).replace('\]', '').split(' ')[1];
+}
 
-console.log(toString.call(undefined));
-console.log(toString.call(null));
-console.log(toString.call(0));
-console.log(toString.call('undefined'));
-console.log(toString.call(Symbol(11)));
-console.log(toString.call((() => {})));
-console.log(toString.call([]));
-console.log(toString.call(true));
+console.log(typeIs(undefined));
+console.log(typeIs(null));
+console.log(typeIs(0));
+console.log(typeIs('undefined'));
+console.log(typeIs(Symbol(11)));
+console.log(typeIs((() => {})));
+console.log(typeIs([]));
+console.log(typeIs(true));
 
 function typeIs(type) {
   return {}.toString.call(type).replace('\]', '').split(' ')[1];
