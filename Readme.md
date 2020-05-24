@@ -23,3 +23,19 @@ number `NaN`
 <b>null</b> — умышленным отсутствием значения.
 
 Для сравнения на <b>undefined</b> можно использовать `void`, так как `void` нельзя переопределить.
+
+### Корректная проверка на типы данных ###
+
+```
+const toString = {}.toString
+
+console.log(toString.call(undefined));
+console.log(toString.call(null));
+console.log(toString.call(0));
+console.log(toString.call('undefined'));
+console.log(toString.call(Symbol(11)));
+console.log(toString.call((() => {})));
+console.log(toString.call([]));
+console.log(toString.call(true));
+```
+
