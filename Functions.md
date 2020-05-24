@@ -1,11 +1,11 @@
 ### Function Declaration ###
 ------------------------
-```javascriot
+```javascript
 function myFunction() {}
 ```
 
 ### Function Expression ###
 ------------------------
-```javascriot
+```javascript
 const myFunction = function() {}
 ```
