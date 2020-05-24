@@ -26,7 +26,7 @@ number `NaN`
 
 ### Корректная проверка на типы данных ###
 
-```
+```javascript
 const toString = {}.toString
 
 console.log(toString.call(undefined));
