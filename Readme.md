@@ -39,9 +39,5 @@ console.log(typeIs(Symbol(11)));
 console.log(typeIs((() => {})));
 console.log(typeIs([]));
 console.log(typeIs(true));
-
-function typeIs(type) {
-  return {}.toString.call(type).replace('\]', '').split(' ')[1];
-}
 ```
 
