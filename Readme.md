@@ -37,5 +37,9 @@ console.log(toString.call(Symbol(11)));
 console.log(toString.call((() => {})));
 console.log(toString.call([]));
 console.log(toString.call(true));
+
+function typeIs(type) {
+  return {}.toString.call(type).replace('\]', '').split(' ')[1];
+}
 ```
 
