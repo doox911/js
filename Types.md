@@ -1,6 +1,6 @@
 ### Falsy values ###
 ------------------------
-number `0` (-0)
+number `0` (`-0`)
 
 BigInt `0n`
 
